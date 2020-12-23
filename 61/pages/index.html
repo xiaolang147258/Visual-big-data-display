@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit">
+    <title>大屏图表适配解决方案</title>
+    <meta name="keywords" content="大屏图表适配解决方案,ECharts,页面自适应,关中刀客在青岛,个人博客,前端技术博客">
+    <meta name="description" content="多种模式适配各种比例的大屏，图表的配置项抽取各层级公用部分，定时刷新，页面时钟，城市定位，天气，颜色主题更换">
+    <link rel="shortcut icon" href="../static/img/favicon.ico">
+    <link rel="stylesheet" href="../static/assets/css/iconfont.css">
+    <link rel="stylesheet" href="../static/css/common.css">
+    <link rel="stylesheet" href="../static/css/index.css">
+    <script src="../static/assets/js/jquery-3.3.1.min.js"></script>
+</head>
+
+<body id="investmentRisk">
+<div id="container">
+    <script src="../static/js/common.js"></script>
+    <header></header>
+    <nav>
+        <a href="map2d.html">进入地图</a>
+        <a href="globe3d.html">进入3d地球</a>
+        <a href="pb_studyPlan.html">学习计划进度</a>
+    </nav>
+    <main>
+        <!--样式里的l,m,r,t,b分别代表左，中，右，上，下-->
+        <div class="l">
+            <div class="l-t">
+                <div class="chart-wrap">
+                    <h3>tiobe计算机语言流行趋势</h3>
+                    <div class="chart" id="ec01_line_tiobe"></div>
+                </div>
+            </div>
+            <div class="l-b">
+                <div class="chart-wrap">
+                    <h3>面积图</h3>
+                    <div class="chart" id="ec02_area_accessSource"></div>
+                </div>
+            </div>
+        </div>
+        <div class="m">
+            <div class="m-t">
+                <div class="chart-wrap">
+                    <h3>一周时间分布</h3>
+                    <div class="chart" id="ec03_barV_timeDistribute"></div>
+                </div>
+            </div>
+            <div class="m-b">
+                <div class="chart-wrap">
+                    <h3>当电脑坏了的时候</h3>
+                    <div class="chart" id="ec04_pie_computerBroken"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="r">
+            <div class="r-t">
+                <div class="chart-wrap">
+                    <h3>一周时间分布</h3>
+                    <div class="chart" id="ec05_lineBar_timeDistribute"></div>
+                </div>
+            </div>
+            <div class="r-b">
+                <div class="chart-wrap">
+                    <h3>当在网上找某首歌的时候</h3>
+                    <div class="chart" id="ec06_pie_findSong"></div>
+                </div>
+            </div>
+        </div>
+    </main>
+</div>
+<aside></aside>
+<script src="../static/assets/js/echarts-4.2.0.min.js"></script>
+<script src="../static/js/chartsCom.js"></script>
+<script src="../static/js/index.js"></script>
+</body>
+</html>
+
+<!--/usr/local/apache-tomcat-9.0.16/webapps/ROOT/projects/bigScreenCharts-->
+
+
+
+
+
